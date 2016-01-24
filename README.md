@@ -29,6 +29,23 @@ of the eight operators, it’s ignored.
  [ | if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ] command.
  ] | if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command.
 
+
+## Building
+
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+## Usage
+
+### The Interpreter
+```
+./interpreter ../code/hello_world.bf
+```
+
 ## References
 
 1. http://nickdesaulniers.github.io/blog/2015/05/25/interpreter-compiler-jit/

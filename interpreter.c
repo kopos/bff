@@ -43,7 +43,7 @@ void interpret(char * code) {
     unsigned char * data_ptr = data;
 
     while ((*inst_ptr) != '\0') {
-        switch(* inst_ptr) {
+        switch(*inst_ptr) {
             case '>': ++data_ptr; break;
             case '<': --data_ptr; break;
             case '+': ++(*data_ptr); break;
@@ -53,6 +53,7 @@ void interpret(char * code) {
             case '[': inst_ptr = jump_fwd(data_ptr, inst_ptr); break;
             case ']': inst_ptr = jump_bck(data_ptr, inst_ptr); break;
         };
+
         ++inst_ptr;
     }
 }
