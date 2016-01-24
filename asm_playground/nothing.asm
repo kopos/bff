@@ -1,3 +1,5 @@
+# AT&T syntax
+#
 # as nothing.asm -o nothing.o
 # ld -lc -macosx_version_min 10.8.5 nothing.o -o nothing
 .text

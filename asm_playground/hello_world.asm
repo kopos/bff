@@ -1,3 +1,5 @@
+# AT&T syntax
+#
 # hello_world.s
 # as hello_world.s -o hello_world.o
 # ld hello_world.o -e _main -lc -o hello_world
